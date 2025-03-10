@@ -1,4 +1,7 @@
 #!/bin/bash
+apt-get update 
+apt-get install -y software-properties-common sudo
+
 
 # Add Canonical official repositories
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main"
