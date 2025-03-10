@@ -19,14 +19,14 @@ sudo apt-get install -y git curl wget unzip python3 python3-pip python3-venv
 
 # Installation des paquets pour admin réseau et systèmes
 sudo apt-get install -y net-tools iproute2
-sudo apt-get install -y crontab man
+sudo apt-get install -y cron man
 
 # Installation de l'editeur de texte nano
 sudo apt-get install -y nano
 
 
 # Récupération du dépôt git si inexistant
-if [ ! -d "cours_scrypt_linux" ]; then
+if ! find / -type d -name "cours_scrypt_linux" 2>/dev/null | grep -q .; then
     git clone https://github.com/flo7716/cours_scrypt_linux/
 fi
 
