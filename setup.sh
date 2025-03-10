@@ -12,10 +12,11 @@ sudo apt-get upgrade -y
 
 
 # Installation des paquets nécessaires
-sudo apt-get install -y git curl wget unzip python3 python3-pip python3-venv 
+sudo apt-get install -y git curl wget unzip python3 python3-pip python3-venv
 
-# Installation des paquets pour admin réseau
+# Installation des paquets pour admin réseau et systèmes
 sudo apt-get install -y net-tools iproute2
+sudo apt-get install -y crontab
 
 # Installation de l'editeur de texte nano
 sudo apt-get install -y nano
