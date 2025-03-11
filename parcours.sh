@@ -6,6 +6,7 @@ for file in $(ls $WORKDIR);do
 	echo "-------------"
 	echo $(basename $file)
 	cat $file
+	echo "Type de fichier : "
 	case  $file in
 		*.py)
 			echo "C'est un script python"
