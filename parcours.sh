@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKDIR=/scrypt_exercice
+WORKDIR=${pwd}
 
 for file in $(ls $WORKDIR);do
 	echo "-------------"
