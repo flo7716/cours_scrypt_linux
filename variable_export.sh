@@ -8,9 +8,9 @@ cat $MESSAGE
 
 
 # Ajout de contenu à la fin du message
-echo "Ces cours sont optimisés pour tous les débutants Bachelor et Ingénieur en Linux ! " >> $MESSAGE
+echo "Ces cours sont optimises pour tous les debutants Bachelor et Ingenieur en Linux ! " >> $MESSAGE
 
 # Affichage du contenu mis à jour du fichier
-echo "Contenu mis à jour du fichier :" $MESSAGE
+echo "Contenu mis a jour du fichier :" $MESSAGE
 cat $MESSAGE
 
