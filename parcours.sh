@@ -20,6 +20,7 @@ for file in $(ls $WORKDIR);do
 		*)
 			echo "Type de fichier inconnu"
 			;;
+	esac
 	echo "-------------"
 done
 
