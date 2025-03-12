@@ -1,8 +1,8 @@
 #!/bin/bash
 
-## Exportation de la variable MESSAGE (chemin du fichier message.txt)
+## Exportation de la variable MESSAGE (chemin du fichier message.txt sur le répertoire courant)
 
-export MESSAGE="${pwd}/message.txt"
+export MESSAGE=$(pwd)/message.txt
 
 # Affichage du contenu du fichier dans la variable MESSAGE
 echo "Contenu du fichier :" $MESSAGE
