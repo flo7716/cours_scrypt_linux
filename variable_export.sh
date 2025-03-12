@@ -1,6 +1,8 @@
 #!/bin/bash
 
-export MESSAGE="/scrypt_exercice/cours_scrypt_linux/message.txt"
+## Exportation de la variable MESSAGE (chemin du fichier message.txt)
+
+export MESSAGE="${pwd}/message.txt"
 
 # Affichage du contenu du fichier dans la variable MESSAGE
 echo "Contenu du fichier :" $MESSAGE
