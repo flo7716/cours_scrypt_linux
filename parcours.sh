@@ -5,7 +5,6 @@ WORKDIR=${pwd}
 for file in $(ls $WORKDIR);do
 	echo "-------------"
 	echo $(basename $file)
-	cat $file
 	echo "Type de fichier : "
 	case  $file in
 		*.py)
