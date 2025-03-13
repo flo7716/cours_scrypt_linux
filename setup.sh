@@ -17,11 +17,11 @@ sudo apt-get install -y nano
 
 
 # Récupération du dépôt git si inexistant
-if ! find / -type d -name "cours_scrypt_linux" 2>/dev/null | grep -q .; then
-    git clone https://github.com/flo7716/cours_scrypt_linux/
+if [ ! -d "/home/florian-andr/Documents/cours_scrypt_linux" ]; then
+    git clone https://github.com/flo7716/cours_scrypt_linux/ /home/florian-andr/Documents/cours_scrypt_linux
 fi
 
-### EXEMPLE DE SCRIPT D'INSTALLATION A AJOUTER POUR CREER UN ENVIRONNEMENT PYTHON DESTINE AU MACHINE LEARNING ###
+### EXEMPLE DE SCRIPT D'INSTALLATION A AJOUTER POUR CREER UN ENVIRONNEMENT PYTHON DESTINE AU MACHINE LEARNING SUR ANACONDA###
 
 # Installation d'Anaconda (environnement virtuel Python)
 curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
