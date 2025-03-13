@@ -1,5 +1,7 @@
 #!/bin/bash
 
+WORKDIR=$(pwd)
+
 # Vérification mises à jour
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -17,8 +19,10 @@ sudo apt-get install -y nano
 
 
 # Récupération du dépôt git si inexistant
-if [ ! -d "/home/florian-andr/Documents/cours_scrypt_linux" ]; then
-    git clone https://github.com/flo7716/cours_scrypt_linux/ /home/florian-andr/Documents/cours_scrypt_linux
+if [ ! -d "$WORKDIR/.git" ]; then
+  echo "Le dépôt Git n'a pas été trouvé dans le répertoire actuel. Clonage du dépôt..."
+  git clone https://github.com/flo7716/cours_scrypt_linux/ $WORKDIR
+  echo "Le dépôt Git a été cloné dans le répertoire actuel."
 fi
 
 ### EXEMPLE DE SCRIPT D'INSTALLATION A AJOUTER POUR CREER UN ENVIRONNEMENT PYTHON DESTINE AU MACHINE LEARNING SUR ANACONDA###
