@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Dans ce cas, le dépôt Git est supposé être stocké sur le répertoire courant
 export GIT_PATH=$(pwd)
 
 # Vérification mises à jour
