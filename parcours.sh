@@ -1,6 +1,10 @@
 #!/bin/bash
-
+#Le dossier de travail correspond ici au dossier courant
 WORKDIR=${pwd}
+
+
+#Pour chaque fichier dans le dossier de travail, on affiche son nom de base (sans le chemin absolu), et on vérifie
+#si le fichier correspond à l'un des cas (python, shell, texte) sinon inconnu.
 
 for file in $(ls $WORKDIR);do
 	echo "-------------"
