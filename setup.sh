@@ -2,6 +2,7 @@
 
 WORKDIR=$(pwd)
 GIT_REPOSITORY=https://github.com/flo7716/cours_scrypt_linux/
+ANACONDA_SHELL_LINK=https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh 
 
 # Vérification mises à jour
 sudo apt-get update
@@ -29,7 +30,7 @@ fi
 ### EXEMPLE DE SCRIPT D'INSTALLATION A AJOUTER POUR CREER UN ENVIRONNEMENT PYTHON DESTINE AU MACHINE LEARNING SUR ANACONDA###
 
 # Installation d'Anaconda (environnement virtuel Python)
-curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+curl -O $ANACONDA_SHELL_LINK
 bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
 
 # Création d'un environnement Anaconda
