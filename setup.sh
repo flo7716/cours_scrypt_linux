@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Définition des variables
+
 WORKDIR=$(pwd)
 GIT_REPOSITORY=https://github.com/flo7716/cours_scrypt_linux/
 ANACONDA_SHELL_LINK=https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh 
@@ -36,7 +38,6 @@ bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh
 # Création d'un environnement Anaconda
 conda create --name env_scrypt python=3.8
 conda activate env_scrypt
-pip install pandas numpy scikit-learn tensorflow keras opencv-python
-
+conda install -c anaconda pandas numpy scikit-learn tensorflow keras opencv
 
 
