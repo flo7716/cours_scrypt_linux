@@ -1,6 +1,7 @@
 #!/bin/bash
 
 WORKDIR=$(pwd)
+GIT_REPOSITORY=https://github.com/flo7716/cours_scrypt_linux/
 
 # Vérification mises à jour
 sudo apt-get update
@@ -21,7 +22,7 @@ sudo apt-get install -y nano
 # Récupération du dépôt git si inexistant
 if [ ! -d "$WORKDIR/.git" ]; then
   echo "Le dépôt Git n'a pas été trouvé dans le répertoire actuel. Clonage du dépôt..."
-  git clone https://github.com/flo7716/cours_scrypt_linux/ $WORKDIR
+  git clone $GIT_REPOSITORY $WORKDIR
   echo "Le dépôt Git a été cloné dans le répertoire actuel."
 fi
 
