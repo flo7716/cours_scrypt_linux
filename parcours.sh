@@ -1,6 +1,6 @@
 #!/bin/bash
 #Le dossier de travail correspond ici au dossier courant
-WORKDIR=${pwd}
+WORKDIR=$(pwd)
 
 
 #Pour chaque fichier dans le dossier de travail, on affiche son nom de base (sans le chemin absolu), et on vérifie
