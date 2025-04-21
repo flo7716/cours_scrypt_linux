@@ -20,6 +20,9 @@ for file in $(ls $WORKDIR);do
 		*.txt)
 			echo "C'est un fichier texte"
 			;;
+		*.csv)
+			echo "C'est un fichier CSV"
+			;;
 		*)
 			echo "Type de fichier inconnu"
 			;;
