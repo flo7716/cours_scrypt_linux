@@ -1,2 +1,2 @@
 On fait des exos de Linux ici !
-Ces cours sont optimises pour tous les debutants Bachelor et Ingenieur en Linux ! 
+
