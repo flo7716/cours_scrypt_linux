@@ -32,8 +32,8 @@ for file in $(ls $WORKDIR);do
 			;;
 
 	  	*.json)
-		   echo "C'est un fichier JSON"
-		   ;;
+		   	echo "C'est un fichier JSON"
+		   	;;
 
 		*.sql)
 			echo "C'est un script SQL"
